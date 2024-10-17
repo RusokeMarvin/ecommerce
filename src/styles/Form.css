@@ -35,15 +35,15 @@ margin: auto;
 @media screen and (max-width:768px) {
 
     .form-input{
-        width: 70%;
+        width: 80%;
         }
 
         .form-container button{
-            width: 45%; 
+            width: 55%; 
         }
         
         .form-container{
-        width: 70%;
+        width: 80%;
         }
         
   }
@@ -52,6 +52,8 @@ margin: auto;
     text-decoration: none; /* Remove underline */
     color: black;
     list-style: none;
+    text-align: center;
+   
   }
 
   .form-link .linking li span{
