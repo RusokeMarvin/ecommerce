@@ -37,7 +37,7 @@ margin: auto;
     .form-input{
         width: 70%;
         }
-        
+
         .form-container button{
             width: 45%; 
         }
@@ -48,3 +48,16 @@ margin: auto;
         
   }
   
+  .form-link .linking li{
+    text-decoration: none; /* Remove underline */
+    color: black;
+    list-style: none;
+  }
+
+  .form-link .linking li span{
+    color: #276076;
+  }
+
+  .form-link .linking{
+    text-decoration: none; /* Remove underline */
+  }

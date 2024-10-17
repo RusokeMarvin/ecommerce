@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
@@ -103,6 +104,19 @@ function Form({ route, method }) {
         <button className="form-button" type="submit" disabled={loading}>
           {loading ? "Loading..." : name}
         </button>
+
+        {/* Conditional Link Below the Button */}
+        <div className="form-link">
+          {method === "login" ? (
+            <Link to="/register" className="linking">
+              <li>You don't have an account? <span>Register</span></li>
+            </Link>
+          ) : (
+            <Link to="/login" className="linking">
+              <li>You already have an account? <span>Login</span></li>
+            </Link>
+          )}
+        </div>
       </form>
     </div>
   );
