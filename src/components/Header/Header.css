@@ -138,6 +138,6 @@ margin-left: 3px;
   }
 
   .header nav .searching2{
-    width: 100%;
+    display: none;
   }
 }
