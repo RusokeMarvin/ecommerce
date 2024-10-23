@@ -7,6 +7,7 @@
   padding: 0 2em;
   color: white;
   box-sizing: border-box; /* Ensures padding is included in total width */
+  list-style: none;
 }
 
 .header nav .textlogo {
@@ -45,9 +46,40 @@
   list-style: none;
   gap: 2rem;
   margin-left: auto; /* Pushes this section to the far right */
-  justify-content: space-evenly; /* Ensures even spacing */
-  flex-grow: 1; /* Allows this section to take available space */
-  max-width: 40%; /* Adjust width to prevent content overflow */
+  justify-content: space-around; /* Ensures even spacing */
+ 
+}
+
+
+.header nav .searching{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1rem;
+}
+
+.header nav .searching1{
+  border: 3px solid orange;
+  width: 20em;
+  height: 2.5em;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header nav .searching1 .icon{
+margin-left: 3px;
+}
+
+.header nav .searching2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid orange;
+  width: 8em;
+  height: 2.5em;
+  border-radius: 15px;
+  background: orange;
 }
 
 .header nav .menu {
@@ -99,5 +131,13 @@
 
   .header nav .sidebar {
     width: 200px;
+  }
+
+  .header nav .searching1{
+    display: none;
+  }
+
+  .header nav .searching2{
+    width: 100%;
   }
 }

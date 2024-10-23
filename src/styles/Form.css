@@ -23,7 +23,7 @@ margin: auto;
 
 .form-containers .riv{
     width: 300px;
-    height: 200px;
+    height: 150px;
     margin: auto;
 }
 
@@ -53,11 +53,14 @@ margin: auto;
     color: black;
     list-style: none;
     text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
    
   }
 
   .form-link .linking li span{
-    color: #276076;
+    color: orange;
+    font-weight: bold;
   }
 
   .form-link .linking{
