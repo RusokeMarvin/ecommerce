@@ -1,21 +1,18 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import Post from "../components/Post";
-import Shoe from "../components/Shoes";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import  "../styles/Home.css"
 
 function AddProduct() {
   const [posts, setPosts] = useState([]);
-  const [shoes, setShoes] = useState([]);
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [email, setEmail] = useState("");
 
   useEffect(() => {
     getPosts();
-    getShoes();
   });
 
   const getPosts = () => {
@@ -29,16 +26,7 @@ function AddProduct() {
       .catch((err) => alert(err));
   };
 
-  const getShoes = () => {
-    api
-      .get("/shoes/")
-      .then((res) => res.data)
-      .then((data) => {
-        setShoes(data);
-        console.log(data);
-      })
-      .catch((err) => alert(err));
-  };
+
 
   const deletePost = (id) => {
     api
@@ -70,10 +58,7 @@ function AddProduct() {
       <div className="post-grid">
       {posts.map((post) => <Post post={post} onDelete={deletePost} key={post.id}/>)}
       </div>
-      <h1>Top Shoe Brands | Best Prices</h1>
-      <div className="post-grid">
-      {shoes.map((shoe) => <Post post={shoe} onDelete={deletePost} key={shoe.id}/>)}
-      </div>
+      
       <form onSubmit={createPost}>
         <label htmlFor="title">Title</label>
         <br />
