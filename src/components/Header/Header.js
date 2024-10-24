@@ -38,7 +38,7 @@ function Header() {
           <div className="searching1">
             <FontAwesomeIcon icon={faSearch} className="icon" />
           </div>
-          <div className="searching2">Search</div>
+          <div className="searching2">SEARCH</div>
         </div>
 
         {/* Sidebar (hidden by default) */}
